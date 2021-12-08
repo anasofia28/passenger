@@ -1,4 +1,4 @@
-# HCI
+# Passenger App
 HCI project 2021/22
 DEI - FCTUC
 
