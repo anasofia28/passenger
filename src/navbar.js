@@ -21,9 +21,11 @@ export default function NavBar() {
             <Box sx={{ flexGrow: 1 }} />
             <StyledLink to="/game" ><ChatIcon/></StyledLink>
             <Box sx={{ flexGrow: 1 }} />
-            <StyledFab color="primary" aria-label="add">
-                <AddIcon />
-            </StyledFab>
+            <Link to="/form">
+                <StyledFab color="primary" aria-label="add">
+                    <AddIcon />
+                </StyledFab>
+            </Link>
             <Box sx={{ flexGrow: 1 }} />
             <NotificationsIcon/>
             <Box sx={{ flexGrow: 1 }} />

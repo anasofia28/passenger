@@ -6,6 +6,8 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import tripsjson from './trips.json';
+import { addTrip } from './redux';
+import { connect } from 'react-redux'
 
 class TripsList extends React.Component{
     render(){
@@ -14,7 +16,7 @@ class TripsList extends React.Component{
             <ImageListItem key="Subheader" cols={2}>
             <ListSubheader component="div" sx={{ color: '#2596be', fontSize: '20px'}}>Viagens sugeridas</ListSubheader>
             </ImageListItem>
-            {tripsjson.map((item) => (
+            {this.props.trips.map((item) => (
             <ImageListItem key={item.img}>
                 <img
                 src={`${process.env.PUBLIC_URL}${item.img}?w=248&fit=crop&auto=format`}
@@ -42,4 +44,18 @@ class TripsList extends React.Component{
     }
 }
 
-export default TripsList;
+let tripToAdd = {}
+
+const mapStateToProps = state => {
+    return{
+        trips: state.trips
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return{
+        addTrip: () => dispatch(addTrip(tripToAdd))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TripsList);

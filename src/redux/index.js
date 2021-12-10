@@ -1,0 +1,1 @@
+export { addTrip } from './trips/tripActions'
