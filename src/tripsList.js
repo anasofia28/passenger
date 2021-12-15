@@ -5,7 +5,6 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
-import tripsjson from './trips.json';
 import { addTrip } from './redux';
 import { connect } from 'react-redux'
 

@@ -5,20 +5,23 @@ const initialState = {
         {
             id: "1",
             img: "/assets/thinkstockphotos-4549879531.jpeg",
-            title: "Paris - 3 dias em museus",
-            date: "14 de Fevereiro"
+            title: "Paris",
+            date: "14 de Fevereiro",
+            description: "3 dias em museus"
         },
         {
             id: "2",
             img: "/assets/3184-desktop-location-description.png",
             title: "Londres",
-            date: "17 de Janeiro"
+            date: "17 de Janeiro",
+            description: "3 dias em museus"
         },
         {
             id: "3",
             img: "/assets/3184-desktop-location-description.png",
             title: "Londres",
-            date: "17 de Janeiro"
+            date: "17 de Janeiro",
+            description: "3 dias em museus"
         }
     ]    
 }
