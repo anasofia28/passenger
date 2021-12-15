@@ -12,12 +12,12 @@ import { connect } from 'react-redux'
 class TripsList extends React.Component{
     render(){
         return(
-        <ImageList sx={{ width: 500, height: 450 }}>
+        <ImageList sx={{ width: '92%', height: 'auto', marginLeft: '4%' }} gap={16}>
             <ImageListItem key="Subheader" cols={2}>
             <ListSubheader component="div" sx={{ color: '#2596be', fontSize: '20px'}}>Viagens sugeridas</ListSubheader>
             </ImageListItem>
             {this.props.trips.map((item) => (
-            <ImageListItem key={item.img}>
+            <ImageListItem id="trip_card" key={item.img} sx={{ width: '100%'}}>
                 <img
                 src={`${process.env.PUBLIC_URL}${item.img}?w=248&fit=crop&auto=format`}
                 srcSet={`${process.env.PUBLIC_URL}${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -25,17 +25,10 @@ class TripsList extends React.Component{
                 loading="lazy"
                 />
                 <ImageListItemBar
-                sx={{opacity: "100%"}}
                 title={item.title}
-                subtitle={item.date}
-                actionIcon={
-                    <IconButton
-                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                    aria-label={`info about ${item.title}`}
-                    >
-                    <InfoIcon />
-                    </IconButton>
-                }
+                actionIcon={item.date}
+                subtitle={item.description}
+                sx={{ backgroundColor: '#FFFFFF', opacity: '100%'}}
                 />
             </ImageListItem>
             ))}

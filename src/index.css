@@ -1,7 +1,70 @@
-body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+#passenger {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+#navbar {
+  background-color: #42A5F5;
+  width: 100%;
+}
+
+#navbar #add_button {
+  background-color: #FFFFFF;
+  width: 48px;
+  height: 48px;
+  stroke: #42A5F5;
+  top: auto;
+  bottom: 16px;
+}
+
+#trip_card img {
+  border-radius: 10px;
+  height: 122px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.MuiImageListItemBar {
+  background-color: #FFFFFF;
+}
+
+.MuiImageListItemBar-title {
+  color: #0091EA;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+}
+
+.MuiImageListItemBar-subtitle {
+  color: #656565;
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+}
+
+.MuiImageListItemBar-actionIcon{
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 0.5rem;
+  color: black;
+  padding-bottom: 6px;
+  padding-right: 12px;
+  margin-bottom: 6px;
+}
   
   ol, ul {
     padding-left: 30px;
@@ -49,3 +112,23 @@ body {
     margin-left: 20px;
   }
   
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
