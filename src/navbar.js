@@ -19,7 +19,7 @@ export default function NavBar() {
         <Toolbar>
             <StyledLink to="/" ><HomeIcon/></StyledLink>
             <Box sx={{ flexGrow: 1 }} />
-            <StyledLink to="/game" ><ChatIcon/></StyledLink>
+            <StyledLink to="/chats" ><ChatIcon/></StyledLink>
             <Box sx={{ flexGrow: 1 }} />
             <Link to="/form">
                 <StyledFab color="primary" aria-label="add">

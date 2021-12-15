@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './home';
-import Game from './game';
+import Chats from './chats';
+import TripChat from './tripChat'
 import NavBar from "./navbar";
 import Profile from "./profile";
 import TripForm from "./tripForm";
@@ -15,7 +16,8 @@ export default function App() {
                 <NavBar />
                 <Routes>
                     <Route exact path="/" element={<Home/>} />
-                    <Route path="/game" element={<Game/>} />
+                    <Route path="/chats" element={<Chats/>} />
+                    <Route path="/tripChat" element={<TripChat/>} />
                     <Route path="/profile" element={<Profile/>}/>
                     <Route path="/form" element={<TripForm/>}/>
                 </Routes>
