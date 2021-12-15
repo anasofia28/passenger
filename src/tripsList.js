@@ -27,7 +27,7 @@ class TripsList extends React.Component{
                 title={item.title}
                 actionIcon={item.date}
                 subtitle={item.description}
-                sx={{ backgroundColor: '#FF00FF', opacity: '100%'}}
+                sx={{ backgroundColor: '#FFFFFF', opacity: '100%'}}
                 position="below"
                 />
             </ImageListItem>
