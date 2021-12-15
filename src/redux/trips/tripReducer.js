@@ -14,14 +14,14 @@ const initialState = {
             img: "/assets/3184-desktop-location-description.png",
             title: "Londres",
             date: "17 de Janeiro",
-            description: "3 dias em museus"
+            description: "chá com a Rainha"
         },
         {
             id: "3",
             img: "/assets/3184-desktop-location-description.png",
             title: "Londres",
             date: "17 de Janeiro",
-            description: "3 dias em museus"
+            description: "chá com a Rainha"
         }
     ]    
 }
