@@ -11,7 +11,7 @@ class TripsList extends React.Component{
         return(
         <ImageList sx={{ width: '92%', height: 'auto', marginLeft: '4%' }} gap={16}>
             <ImageListItem key="Subheader" cols={2}>
-                <ListSubheader component="div" sx={{ color: '#2596be', fontSize: '20px'}}>Viagens sugeridas</ListSubheader>
+                <ListSubheader id="titles" component="div">Viagens sugeridas</ListSubheader>
             </ImageListItem>
             {this.props.trips.map((item) => (
             <ImageListItem id="trip_card" key={item.img} sx={{ width: '100%'}}>
@@ -25,7 +25,7 @@ class TripsList extends React.Component{
                 title={item.title}
                 actionIcon={item.date}
                 subtitle={item.description}
-                sx={{ backgroundColor: '#FFFFFF', opacity: '100%'}}
+                sx={{ backgroundColor: '#FFFFFF', paddingTop: '4px', boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.05)', borderRadius: '0px 0px 10px 10px'}}
                 position="below"
                 />
             </ImageListItem>

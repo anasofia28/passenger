@@ -1,5 +1,7 @@
 import React from 'react';
-import DatePicker from 'react-datepicker'
+import DatePicker from 'react-datepicker';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 import { addTrip } from './redux';
 import { connect } from 'react-redux'
 
@@ -20,6 +22,8 @@ class TripForm extends React.Component{
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChangeLocal = this.handleChangeLocal.bind(this);
+        this.handleChangeDescription = this.handleChangeDescription.bind(this);
     }
     handleChange(event) {
         this.setState({title: event.target.value});
@@ -43,30 +47,15 @@ class TripForm extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <h1>FORM</h1>
+                <h1 id="titles">Criar Viagem</h1>    
                 <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Nome Viagem:
-                        <input type="text" value={this.state.title} onChange={this.handleChange} />
-                    </label>
-                    <label>
-                        Data início:
-                        <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} />
-                    </label>
-                    <label>
-                        Data fim:
-                        <DatePicker selected={this.state.endDate} onChange={(date2) => this.setState({endDate: date2})} />
-                    </label>
-                    <label>
-                        Local:
-                        <input type="text" value={this.state.local} onChange={this.handleChangeLocal} />
-                    </label>
-                    <label>
-                        Descrição:
-                        <input type="text" value={this.state.description} onChange={this.handleChangeDescription} />
-                    </label>
+                    <TextField id="standard-basic" label="Nome Viagem" variant="standard" type="text" value={this.state.title} onChange={this.handleChange} />
+                    <DatePicker placeholderText='Data início' selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} />
+                    <DatePicker placeholderText='Data fim' selected={this.state.endDate} onChange={(date2) => this.setState({endDate: date2})} />
+                    <TextField id="standard-basic" label="Local" variant="standard" type="text" value={this.state.local} onChange={this.handleChangeLocal} />
+                    <TextField id="standard-basic" label="Descrição" variant="standard" type="text" value={this.state.description} onChange={this.handleChangeDescription} />
                     
-                <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" />
                 </form>
             </React.Fragment>
         );
