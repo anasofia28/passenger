@@ -49,13 +49,20 @@ class TripForm extends React.Component{
             <React.Fragment>
                 <h1 id="titles">Criar Viagem</h1>    
                 <form onSubmit={this.handleSubmit}>
-                    <TextField id="standard-basic" label="Nome Viagem" variant="standard" type="text" value={this.state.title} onChange={this.handleChange} />
-                    <DatePicker placeholderText='Data início' selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} />
-                    <DatePicker placeholderText='Data fim' selected={this.state.endDate} onChange={(date2) => this.setState({endDate: date2})} />
-                    <TextField id="standard-basic" label="Local" variant="standard" type="text" value={this.state.local} onChange={this.handleChangeLocal} />
-                    <TextField id="standard-basic" label="Descrição" variant="standard" type="text" value={this.state.description} onChange={this.handleChangeDescription} />
-                    
-                    <input type="submit" value="Submit" />
+                    <TextField id="standard-basic" label="Nome Viagem" variant="standard" type="text" value={this.state.title} onChange={this.handleChange}
+                        sx={{ width: '100%'}} />
+                        <DatePicker placeholderText='Data início' selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} 
+                        sx={{ width: '50%', float: 'top' }} />
+                        <DatePicker placeholderText='Data fim' selected={this.state.endDate} onChange={(date2) => this.setState({endDate: date2})} 
+                        sx={{ width: '50%', float: 'top'}} />
+                        <TextField id="standard-basic" label="Local" variant="standard" type="text" value={this.state.local} onChange={this.handleChangeLocal} 
+                        sx={{}} />
+                        <TextField id="standard-basic" label="Descrição" variant="standard" type="text" value={this.state.description} onChange={this.handleChangeDescription} 
+                        sx={{width: '100%'}} /> 
+
+                    <div style={{display: "flex",justifyContent: "center",alignItems: "center"}}>
+                        <input id="submit_btn" type="submit" value="Criar viagem" />
+                    </div>
                 </form>
             </React.Fragment>
         );
