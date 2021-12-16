@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import './tripChat.css'
 
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,11 @@ class Chats extends React.Component {
   render() {
     return(
       <React.Fragment>
-        <h1>Canal de viagem</h1>
+        <div>
+            <br></br>
+            <h1>Canal de viagem</h1> 
+        </div>
+        
         <div style={{justifyContent:"left", border:"2px solid grey"}}>
             <Link to="/tripChat">
             <div style={{display:"flex", margin:"18px", justifyContent:"space-between", width:"30%"}}>

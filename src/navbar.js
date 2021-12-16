@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
     return(
-    <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+    <AppBar id="navbar" position="fixed" color="primary" sx={{ top: 'auto', bottom: 0, height: '45px'}}>
         <CssBaseline />
         <Toolbar>
             <StyledLink to="/" ><HomeIcon/></StyledLink>
@@ -22,9 +22,9 @@ export default function NavBar() {
             <StyledLink to="/chats" ><ChatIcon/></StyledLink>
             <Box sx={{ flexGrow: 1 }} />
             <Link to="/form">
-                <StyledFab color="primary" aria-label="add">
+                <Fab id="add_button" color="primary" aria-label="add">
                     <AddIcon />
-                </StyledFab>
+                </Fab>
             </Link>
             <Box sx={{ flexGrow: 1 }} />
             <NotificationsIcon/>

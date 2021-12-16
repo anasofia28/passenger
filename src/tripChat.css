@@ -1,0 +1,21 @@
+.top {
+    position: absolute;
+    width: 414px;
+    height: 79px;
+    left: 0px;
+    top: 59px;
+}
+
+.name {
+    position: absolute;
+    height: 27px;
+    left: 161px;
+
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: rgb(196, 42, 42);
+}
