@@ -1,13 +1,6 @@
 import * as React from 'react';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from '@mui/material/Toolbar';
-import AddIcon from '@mui/icons-material/Add';
-import HomeIcon from '@mui/icons-material/Home';
-import ChatIcon from '@mui/icons-material/Message';
-import PersonIcon from '@mui/icons-material/Person';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
 import { CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link } from "react-router-dom";
@@ -35,11 +28,3 @@ const StyledLink = styled(Link)({
     },
 })
 ;
-const StyledFab = styled(Fab)({
-    position: 'absolute',
-    zIndex: 1,
-    top: -30,
-    left: 0,
-    right: 0,
-    margin: '0 auto',
-  });
