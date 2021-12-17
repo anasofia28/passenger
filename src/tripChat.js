@@ -11,7 +11,6 @@ import './tripChat.css'
 function TripChat (props) {
 
     let params = useParams();
-    alert(params.tripIndex);
 
         return(
             <div>
