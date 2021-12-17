@@ -7,6 +7,7 @@ import TopBar from "./top_bar";
 import NavBar from "./navbar";
 import Profile from "./profile";
 import TripForm from "./tripForm";
+import TripInfo from "./tripInfo";
 import { Provider } from "react-redux";
 import store from './redux/store'
 
@@ -22,6 +23,7 @@ export default function App() {
                     <Route path="/tripChat/:tripIndex" element={<TripChat/>} />
                     <Route path="/profile" element={<Profile/>}/>
                     <Route path="/form" element={<TripForm/>}/>
+                    <Route path="/tripInfo/:tripIndex" element={<TripInfo/>}/>
                 </Routes>
             </Router>
         </Provider>
