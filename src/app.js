@@ -19,7 +19,7 @@ export default function App() {
                 <Routes>
                     <Route exact path="/" element={<Home/>} />
                     <Route path="/chats" element={<Chats/>} />
-                    <Route path="/tripChat" element={<TripChat/>} />
+                    <Route path="/tripChat/:tripIndex" element={<TripChat/>} />
                     <Route path="/profile" element={<Profile/>}/>
                     <Route path="/form" element={<TripForm/>}/>
                 </Routes>

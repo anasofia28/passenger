@@ -26,15 +26,34 @@
   bottom: 16px;
 }
 
-#trip_card img {
-  border-radius: 10px;
-  height: 122px;
-  object-fit: cover;
-  z-index: -1;
+#titles {
+  color: #42A5F5; 
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  margin-top: 80px;
 }
 
-.MuiImageListItemBar {
-  background-color: #FFFFFF;
+#trip_card {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#trip_card img {
+  border-radius: 10px;
+  height: 140px;
+  object-fit: cover;
+}
+
+#chat_card {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#chat_card img {
+  border-radius: 10px;
+  width: 140px;
+  /*height: 140px;*/
+  left: 20px;
 }
 
 .MuiImageListItemBar-title {
@@ -44,7 +63,8 @@
   font-style: normal;
   font-size: 15px;
   line-height: 18px;
-
+  padding-left: 8px;
+  padding-bottom: 4px;
 }
 
 .MuiImageListItemBar-subtitle {
@@ -53,7 +73,8 @@
   font-style: normal;
   font-size: 10px;
   line-height: 12px;
-
+  padding-left: 8px;
+  padding-bottom: 4px;
 }
 
 .MuiImageListItemBar-actionIcon{
@@ -61,57 +82,68 @@
   font-weight: bold;
   font-size: 0.5rem;
   color: black;
-  padding-bottom: 6px;
-  padding-right: 12px;
-  margin-bottom: 6px;
+  padding-right: 8px;
+  padding-top: 8px;
+  margin-top: 8px;
 }
   
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
+h1, form {
+  width: 92%;
+  margin-left: 4%;
+}
 
+form input {
+  background: #b63434;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 52px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
