@@ -7,32 +7,43 @@ import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import './index.css';
 import './tripChat.css'
+import { addTrip } from './redux';
 
-function TripChat (props) {
+function TripChat(props) {
 
     let params = useParams();
 
-        return(
-            <div>
-                <div class="top" style={{justifyContent:"center"}}>
-                    <h1 class="name"> {props.trips[params.tripIndex].title} </h1>
-                    <img 
-                    src={`${process.env.PUBLIC_URL}${props.trips[params.tripIndex].img}?w=248&fit=crop&auto=format`}
-                    style={{width: "200%", height: "200px", top:"59px", borderRadius:"5px"}}></img>
-                </div>
-                <div class="message" style={{justifyContent:"right"}}>
-                    <p>Desculpa, não é possível inserir mensagens</p>
-                </div>
-                <ImageListItemBar id="message"
-                    title="Eu"
-                    subtitle="Olá, mal posso esperar por ir viajar contigo!"
-                    sx={{ backgroundColor: '#FFFFFF', paddingTop: '4px', boxShadow: '2px 2px 4px rgba(220, 220, 220, 0.05)', borderRadius: '0px 0px 10px 10px' }}
-                    position="below"
-                />
-            </div>    
-        
-        );
+    return (
+        <div>
+            <img class="info" src={`${process.env.PUBLIC_URL}${props.trips[params.tripIndex].img}?w=248&fit=crop&auto=format`}
+                srcSet={`${process.env.PUBLIC_URL}${props.trips[params.tripIndex].img}?w=248&fit=crop&auto=format&dpr=2 2x`} />
+            <div class="info" style={{ backgroundColor: '#FFFFFF', textShadow: "-0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white",display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-200px' }} >
+                <p>{props.trips[params.tripIndex].title}</p>
+            </div>
+            <ImageListItemBar id="message"
+                title="Eu"
+                subtitle="Olá, mal posso esperar por ir viajar contigo!"
+                sx={{ backgroundColor: '#FFFFFF', paddingTop: '4px', boxShadow: '2px 2px 4px rgba(220, 220, 220, 0.05)', borderRadius: '0px 0px 10px 10px' }}
+                position="below"
+            />
+            <ImageListItemBar id="message2"
+                title="Maria"
+                subtitle="Olá!"
+                sx={{ backgroundColor: '#FFFFFF', paddingTop: '4px', boxShadow: '2px 2px 4px rgba(220, 220, 220, 0.05)', borderRadius: '0px 0px 10px 10px' }}
+                position="below"
+            />
+            <ImageListItemBar id="message3"
+                title="Maria"
+                subtitle="Já estou a caminho!"
+                sx={{ backgroundColor: '#FFFFFF', paddingTop: '4px', boxShadow: '2px 2px 4px rgba(220, 220, 220, 0.05)', borderRadius: '0px 0px 10px 10px' }}
+                position="below"
+            />
+        </div>
+
+    );
 }
+
+let tripToAdd;
 
 const mapStateToProps = state => {
     return {
@@ -42,7 +53,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-       
+        addTrip: () => dispatch(addTrip(tripToAdd))
     }
 }
 

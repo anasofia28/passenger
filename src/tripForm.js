@@ -20,6 +20,7 @@ class TripForm extends React.Component{
             startDate: '',
             endDate: ''
         };
+        
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChangeLocal = this.handleChangeLocal.bind(this);
@@ -39,8 +40,9 @@ class TripForm extends React.Component{
 
 
     handleSubmit(event) {
-        alert('1: ' + this.state.title);
+        alert("Criou uma nova viagem!");
         this.props.addTrip();
+        this.render();
         event.preventDefault();
     }
 
@@ -70,11 +72,12 @@ class TripForm extends React.Component{
 
 
 let tripToAdd = {
-    id: "3",
-    img: "/assets/3184-desktop-location-description.png",
-    title: "Londres",
+    id: "4",
+    img: "/assets/grand-canal-veneza-e1596744121749.jpg",
+    title: "Veneza",
     date: "17 de Janeiro",
-    description: "chá com a Rainha"
+    time: "17:00",
+    description: "Passeio de gôndola"
 }
 
 const mapStateToProps = state => {

@@ -28,10 +28,34 @@
     position: absolute;
     width: 246px;
     height: 82px;
-    left: 500px;
-    top: 631px;
+    left: 1000px;
+    top: 500px;
 
     background: #EFEFEF;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#message2{
+    position: absolute;
+    width: 246px;
+    height: 82px;
+    left: 100px;
+    top: 400px;
+
+    background: #fafbfdfa;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#message3{
+    position: absolute;
+    width: 246px;
+    height: 82px;
+    left: 100px;
+    top: 600px;
+
+    background: #fafbfdfa;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }

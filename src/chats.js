@@ -54,7 +54,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addTrip: () => dispatch(addTrip(tripToAdd))
+        
     }
 }
 
