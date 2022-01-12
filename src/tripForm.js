@@ -51,15 +51,13 @@ class TripForm extends React.Component{
             <React.Fragment>
                 <h1 id="titles">Criar Viagem</h1>    
                 <form onSubmit={this.handleSubmit}>
-                    <input class="form_field" label="Nome viagem" type="text" value={this.state.title} onChange={this.handleChange}></input>
+                    <input class="form_field" type="text" placeholder='Nome da Viagem' value={this.state.title} onChange={this.handleChange}></input>
                     <div id="datepickers">
-                        <DatePicker placeholderText='Data início' selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} 
-                        sx={{ height: '52px' }} />
-                        <DatePicker placeholderText='Data fim' selected={this.state.endDate} onChange={(date2) => this.setState({endDate: date2})} 
-                        sx={{ height: '52px'}} />
+                        <DatePicker placeholderText='Data início' selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})}/>
+                        <DatePicker placeholderText='Data fim' selected={this.state.endDate} onChange={(date2) => this.setState({endDate: date2})}/>
                     </div>  
-                    <input class="form_field" label="Local" type="text" value={this.state.local} onChange={this.handleChangeLocal}></input>
-                    <input class="form_field" label="Descrição" type="text" value={this.state.description} onChange={this.handleChangeDescription}></input>
+                    <input class="form_field" type="text" placeholder='Local' value={this.state.local} onChange={this.handleChangeLocal}></input>
+                    <input class="form_field" type="text" placeholder='Descrição' value={this.state.description} onChange={this.handleChangeDescription}></input>
 
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <input id="submit_btn" type="submit" value="Criar viagem" />

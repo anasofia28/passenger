@@ -6,9 +6,9 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <ListSubheader id="titles">Viagens Agendadas</ListSubheader>
+        <h1 id="titles">Viagens Agendadas</h1>
 
-        <ListSubheader id="titles" component="div">Viagens sugeridas</ListSubheader>
+        <h1 id="titles">Viagens Sugeridas</h1>
         <TripsList />
       </div>
 

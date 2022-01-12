@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* PASSENGER TITLE */
 #passenger {
   font-family: 'Bebas Neue';
   font-style: normal;
@@ -10,8 +11,16 @@
   color: #FFFFFF;
   padding-top: 12px;
   margin-top: 12px;
+  padding-left: 2px;
 }
 
+#passenger:hover {
+  color: #FFFFFF;
+  opacity: 70%;
+}
+
+
+/* BOTTOM BAR */
 #navbar {
   background-color: #42A5F5;
   width: 100%;
@@ -26,6 +35,8 @@
   bottom: 16px;
 }
 
+
+/* ALL TITLES */
 #titles {
   color: #42A5F5; 
   font-family: 'Bebas Neue';
@@ -33,6 +44,8 @@
   margin-top: 80px;
 }
 
+
+/* HOME TRIP CARD (BIG) */
 #trip_card {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -42,18 +55,6 @@
   border-radius: 10px;
   height: 140px;
   object-fit: cover;
-}
-
-#chat_card {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-#chat_card img {
-  border-radius: 10px;
-  width: 140px;
-  /*height: 140px;*/
-  left: 20px;
 }
 
 .MuiImageListItemBar-title {
@@ -88,6 +89,20 @@
 }
 
 
+/* CHAT CARDS */
+#chat_card {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#chat_card img {
+  border-radius: 10px;
+  width: 140px;
+  /*height: 140px;*/
+  left: 20px;
+}
+
+
 /* FORM */  
 h1, form {
   width: 92%;
@@ -101,16 +116,33 @@ h1, form {
   border-radius: 10px; 
   margin-top: 8px;
   margin-bottom: 8px;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+::placeholder {
+  color: #000000, 90%;
+  font-family: 'Lato';
+  font-size: 14px;
+  padding-left: 8px;
 }
 
 #datepickers {
   display: inline-flex;
+  width: 100%;
 }
 
 .react-datepicker__input-container input {
-  width: 100%;
-  
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  width: 96%;
   height: 52px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 8px;
 }
 
 #submit_btn {
@@ -124,6 +156,7 @@ h1, form {
   line-height: 32px;
   color: #FFFFFF;
   padding-top: 8px;
+  margin-top: 48px;
 }
 
 img.info {
