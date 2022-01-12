@@ -86,10 +86,31 @@
   padding-top: 8px;
   margin-top: 8px;
 }
-  
+
+
+/* FORM */  
 h1, form {
   width: 92%;
   margin-left: 4%;
+}
+
+.form_field {
+  background-color: #EFEFEF;
+  width: 100%;
+  height: 52px;
+  border-radius: 10px; 
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#datepickers {
+  display: inline-flex;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  
+  height: 52px;
 }
 
 #submit_btn {
