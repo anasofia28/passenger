@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom';
 import './index.css';
 import './tripChat.css'
 import { addTrip } from './redux';
+import trips from "./myTrips.json";
 
 class Message extends React.Component{
 
@@ -39,10 +40,10 @@ function TripChat(props) {
     return (
         <div>
             <div>
-            <img class="info" src={`${process.env.PUBLIC_URL}${props.trips[params.tripIndex].img}?w=248&fit=crop&auto=format`}
-                srcSet={`${process.env.PUBLIC_URL}${props.trips[params.tripIndex].img}?w=248&fit=crop&auto=format&dpr=2 2x`} />
+            <img class="info" src={`${process.env.PUBLIC_URL}${trips[params.tripIndex].img}?w=248&fit=crop&auto=format`}
+                srcSet={`${process.env.PUBLIC_URL}${trips[params.tripIndex].img}?w=248&fit=crop&auto=format&dpr=2 2x`} />
             <div class="info" style={{ backgroundColor: '#FFFFFF', textShadow: "-0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white",display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-200px' }} >
-                <p>{props.trips[params.tripIndex].title}</p>
+                <p>{trips[params.tripIndex].title}</p>
             </div>
             </div>
 
