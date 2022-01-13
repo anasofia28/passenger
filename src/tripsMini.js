@@ -12,7 +12,7 @@ class TripsMini extends React.Component {
 
     render() {
         return (
-            <div sx={{ marginLeft: '4%' }}>
+            <div style={{ marginLeft: '4%' }}>
                 {this.props.trips.map((item, index) => (
                     <Link to={`/tripInfo/${index}`}>
                         <div id="mini_card">
