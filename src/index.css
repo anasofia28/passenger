@@ -51,6 +51,32 @@
     margin-left: 4%;
   }
 
+
+/* DESKTOP VIEW */
+div.desktop {
+    padding-top: 256px;
+}
+
+h1.desktop {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+p.desktop {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center; 
+}
+
+
 /* HOMEPAGE */
   /* HOME TRIP CARD (BIG) */
   #trip_card {

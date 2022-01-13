@@ -10,22 +10,43 @@ import TripForm from "./tripForm";
 import TripInfo from "./tripInfo";
 import { Provider } from "react-redux";
 import store from './redux/store'
+import { useMediaQuery } from 'react-responsive'
+
+const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 641 })
+    return isDesktop ? children : null
+}
+
+const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 640 })
+    return isMobile ? children : null
+}
 
 export default function App() {
     return(
         <Provider store={store}>
-            <Router>
-                <TopBar />
-                <NavBar />
-                <Routes>
-                    <Route exact path="/" element={<Home/>} />
-                    <Route path="/chats" element={<Chats/>} />
-                    <Route path="/tripChat/:tripIndex" element={<TripChat/>} />
-                    <Route path="/profile" element={<Profile/>}/>
-                    <Route path="/form" element={<TripForm/>}/>
-                    <Route path="/tripInfo/:tripIndex" element={<TripInfo/>}/>
-                </Routes>
-            </Router>
+            <Mobile>
+                <Router>
+                    <TopBar />
+                    <NavBar />
+                    <Routes>
+                        <Route exact path="/" element={<Home/>} />
+                        <Route path="/chats" element={<Chats/>} />
+                        <Route path="/tripChat/:tripIndex" element={<TripChat/>}/>
+                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/form" element={<TripForm/>}/>
+                        <Route path="/tripInfo/:tripIndex" element={<TripInfo/>}/>
+                    </Routes>
+                </Router>
+            </Mobile>
+
+            <Desktop>
+                <style>{'body { background-color: #42A5F5; }'}</style>
+                <div class="desktop">
+                    <h1 class="desktop">Passenger</h1>
+                    <p class="desktop">apenas disponível em versão mobile</p>
+                </div>   
+            </Desktop>
         </Provider>
     );
 }

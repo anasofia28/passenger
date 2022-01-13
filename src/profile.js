@@ -1,4 +1,5 @@
 import React from 'react';
+import TripsMini from './tripsMini';
 import TripsList from './tripsList';
 
 
@@ -19,6 +20,7 @@ class Profile extends React.Component{
                 </div>
                 
                 <h2 id="subtitle">Viagens Agendadas</h2>
+                <TripsMini/>
                 <h2 id="subtitle">As Minhas Viagens Passadas</h2>
                 <TripsList/>
             </React.Fragment>
