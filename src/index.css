@@ -78,7 +78,47 @@ p.desktop {
 
 
 /* HOMEPAGE */
-  /* HOME TRIP CARD (BIG) */
+  /* TRIP CARD (MINI) */
+  #mini_card {
+    padding-right: 8px;
+    display: inline-flex;
+  }
+
+  #mini_card img {
+    width: 77px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 1;
+    float: inline-start;
+  }
+
+  #mini_card div {
+    background-color: pink; 
+    width: 104px; 
+    height: 68px; 
+    z-index: -1;
+  }
+
+  #mini_card div h2 {
+    color: #000000;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  #mini_card div p {
+    color: #000000;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /* TRIP CARD (BIG) */
   #trip_card {
     padding-top: 8px;
     padding-bottom: 8px;

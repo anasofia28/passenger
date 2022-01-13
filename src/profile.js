@@ -9,7 +9,7 @@ class Profile extends React.Component{
             <React.Fragment>
                 <h1 id="title">Passaporte</h1> 
                 <img class="bio" src={`${process.env.PUBLIC_URL}/assets/3184-desktop-location-description.png`}
-                        style={{width:"112px", height:"112px", borderRadius:"80px"}}></img>
+                    style={{width:"112px", height:"112px", borderRadius:"80px"}}></img>
                 <div class="bio">
                     <div>
                         <h3>Rita Santos</h3>

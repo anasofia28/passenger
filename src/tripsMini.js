@@ -1,10 +1,8 @@
 import * as React from 'react';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { addTrip } from './redux';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
+import './index.css';
 
 
 class TripsMini extends React.Component {
@@ -14,28 +12,25 @@ class TripsMini extends React.Component {
 
     render() {
         return (
-            <ImageList sx={{ height: '68px', marginLeft: '4%' }} cols={4} gap={16}>
+            <div sx={{ marginLeft: '4%' }}>
                 {this.props.trips.map((item, index) => (
                     <Link to={`/tripInfo/${index}`}>
-                        <ImageListItem id="mini_card" key={item.img} sx={{ width: '100%' }}>
+                        <div id="mini_card">
                             <img
                                 src={`${process.env.PUBLIC_URL}${item.img}?w=248&fit=crop&auto=format`}
                                 srcSet={`${process.env.PUBLIC_URL}${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                 alt={item.title}
                                 loading="lazy"
                             />
-                            <ImageListItemBar
-                                title={item.title}
-                                actionIcon={item.date}
-                                subtitle={item.description}
-                                sx={{ backgroundColor: '#FFFFFF', paddingTop: '4px', boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.05)', borderRadius: '0px 0px 10px 10px' }}
-                                position="below"
-                            />
-                        </ImageListItem>
+                            <div>
+                                <h2>{item.title}</h2>
+                                <p>{item.date2}</p>
+                                <p>{item.autor}</p>
+                            </div>                        
+                        </div>
                     </Link>
                 ))}
-            </ImageList>
-
+            </div>
         );
     }
 }
