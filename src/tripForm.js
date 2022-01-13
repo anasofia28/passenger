@@ -1,7 +1,5 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import { addTrip } from './redux';
 import { connect } from 'react-redux'
 

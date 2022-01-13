@@ -7,12 +7,17 @@ class Profile extends React.Component{
         return(
             <React.Fragment>
                 <h1 id="title">Passaporte</h1> 
-                <img src={`${process.env.PUBLIC_URL}/assets/3184-desktop-location-description.png`}
-                    style={{width:"106px", height:"106px", borderRadius:"80px"}}></img>
-                <h4>Miguel</h4>
-                <h5>22 anos</h5>
-                <h6> DESCRIÇÃO SOBRE MIM: gosto de viajar</h6>
-
+                <img class="bio" src={`${process.env.PUBLIC_URL}/assets/3184-desktop-location-description.png`}
+                        style={{width:"112px", height:"112px", borderRadius:"80px"}}></img>
+                <div class="bio">
+                    <div>
+                        <h3>Rita Santos</h3>
+                        <h3 id="nr">19</h3>
+                        <h4>anos</h4>
+                    </div>
+                    <p>Sou estudante de História da Arte e adoro viajar para conhecer novos locais e a sua história. Sou apaixonada por museus culturais...</p>
+                </div>
+                
                 <h2 id="subtitle">Viagens Agendadas</h2>
                 <h2 id="subtitle">As Minhas Viagens Passadas</h2>
                 <TripsList/>
