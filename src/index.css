@@ -36,14 +36,19 @@
 }
 
 
-/* ALL TITLES */
-#titles {
+/* TITLES */
+#title {
   color: #42A5F5; 
   font-family: 'Bebas Neue';
   font-size: 30px;
   margin-top: 80px;
 }
 
+#subtitle {
+  color: #42A5F5; 
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+}
 
 /* HOME TRIP CARD (BIG) */
 #trip_card {

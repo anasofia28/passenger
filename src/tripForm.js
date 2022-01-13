@@ -49,7 +49,7 @@ class TripForm extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <h1 id="titles">Criar Viagem</h1>    
+                <h1 id="title">Criar Viagem</h1>    
                 <form onSubmit={this.handleSubmit}>
                     <input class="form_field" type="text" placeholder='Nome da Viagem' value={this.state.title} onChange={this.handleChange}></input>
                     <div id="datepickers">

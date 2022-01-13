@@ -16,7 +16,7 @@ class Chats extends React.Component {
   render() {
     return(
         <div>
-            <h1 id="titles" component="div">Canal viagens</h1>
+            <h1 id="title" component="div">Canal de Viagem</h1>
             <ImageList sx={{ width: '92%', height: 'auto', marginLeft: '4%' }} gap={16}>
                 {this.props.trips.map((item, index) => (            
                     <ImageListItem id="chat_card" key={item.img} cols={2} sx={{ width: '100%' }}>
