@@ -22,20 +22,20 @@ function TripInfo(props) {
             <img class="info" src={`${process.env.PUBLIC_URL}${props.trips[params.tripIndex].img}?w=248&fit=crop&auto=format`}
                 srcSet={`${process.env.PUBLIC_URL}${props.trips[params.tripIndex].img}?w=248&fit=crop&auto=format&dpr=2 2x`} />
 
-            <div class="info" style={{ backgroundColor: '#FFFFFF', textShadow: "-0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white",display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-200px' }} >
+            <div class="info" style={{ backgroundColor: '#FFFFFF', textShadow: "-0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white", justifyContent: 'center', alignItems: 'center' }} >
                 <p>{props.trips[params.tripIndex].title}</p>
             </div>
-            <br></br>
-            <br></br>
-            <br></br>
 
             <p class="info">{props.trips[params.tripIndex].description}</p>
 
-            <p class="info">hora inicio: {props.trips[params.tripIndex].time}</p>
-            <p class="info">{props.trips[params.tripIndex].date}</p>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    {button}
-                </div>
+            <div style={{ display: 'inline-flex', marginLeft: '30%' }}>
+                <p class="info">{props.trips[params.tripIndex].date}</p>
+                <p class="info">Início: {props.trips[params.tripIndex].time}</p>
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                {button}
+            </div>
         </React.Fragment>
 
     );

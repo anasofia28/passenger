@@ -42,7 +42,7 @@ function TripChat(props) {
             <div>
             <img class="info" src={`${process.env.PUBLIC_URL}${trips[params.tripIndex].img}?w=248&fit=crop&auto=format`}
                 srcSet={`${process.env.PUBLIC_URL}${trips[params.tripIndex].img}?w=248&fit=crop&auto=format&dpr=2 2x`} />
-            <div class="info" style={{ backgroundColor: '#FFFFFF', textShadow: "-0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white",display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-200px' }} >
+            <div class="info" style={{ backgroundColor: '#FFFFFF', textShadow: "-0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white", justifyContent: 'center', alignItems: 'center' }} >
                 <p>{trips[params.tripIndex].title}</p>
             </div>
             </div>
