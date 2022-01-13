@@ -43,7 +43,7 @@ const StyledLink = styled(Link)({
     fontSize: "20px",
     marginLeft: "20px",
     "&:hover": {
-      color: "yellow",
+      opacity: "70%",
       borderBottom: "1px solid white",
     },
 })

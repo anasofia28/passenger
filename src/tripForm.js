@@ -1,9 +1,8 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import { addTrip } from './redux';
 import { connect } from 'react-redux'
+import swal from 'sweetalert';
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -40,8 +39,8 @@ class TripForm extends React.Component{
 
 
     handleSubmit(event) {
-        alert("Criou uma nova viagem!");
         this.props.addTrip();
+        swal("Viagem criada!", `Criou a viagem "${this.state.title}" com sucesso!`, "success");
         this.render();
         event.preventDefault();
     }

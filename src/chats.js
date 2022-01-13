@@ -6,6 +6,7 @@ import './index.css';
 import './tripChat.css';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
+import trips from "./myTrips.json";
 
 class Chats extends React.Component {
 
@@ -18,7 +19,7 @@ class Chats extends React.Component {
         <div>
             <h1 id="title" component="div">Canal de Viagem</h1>
             <ImageList sx={{ width: '92%', height: 'auto', marginLeft: '4%' }} gap={16}>
-                {this.props.trips.map((item, index) => (            
+                {trips.map((item, index) => (            
                     <ImageListItem id="chat_card" key={item.img} cols={2} sx={{ width: '100%' }}>
                         <Link to={`/tripChat/${index}`} >
                             <img
