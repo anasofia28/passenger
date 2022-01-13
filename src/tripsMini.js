@@ -3,6 +3,7 @@ import { addTrip } from './redux';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 import './index.css';
+import trips from "./myTrips.json";
 
 
 class TripsMini extends React.Component {
@@ -13,8 +14,8 @@ class TripsMini extends React.Component {
     render() {
         return (
             <div style={{ marginLeft: '4%' }}>
-                {this.props.trips.map((item, index) => (
-                    <Link to={`/tripInfo/${index}`}>
+                {trips.map((item, index) => (
+                    <Link to={`/tripInfoMine/${index}`}>
                         <div id="mini_card">
                             <img
                                 src={`${process.env.PUBLIC_URL}${item.img}?w=248&fit=crop&auto=format`}

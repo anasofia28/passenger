@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "img": "/assets/sekumpul-waterfalls.jpg",
+        "title": "Visita às cascatas Sekumpul",
+        "date": "17.01.2022",
+        "time": "17:00",
+        "description": "Passei pelas cascatas mais bonitas de Bali",
+        "local": "Bali, Índia",
+        "autor": "João",
+        "mine": "1"
+    },
+    {
+        "id": "2",
+        "img": "/assets/the-national-gallery.jpg",
+        "title": "Galeria Nacional - Trafalgar Square",
+        "date": "14.02.2022",
+        "time": "17:00",
+        "description": "Visita ao museu de Trafalgar Square que se expecializa em pinturas produzidas entre 1250 e 1900.",
+        "local": "Londres",
+        "autor": "Joana",
+        "mine": "1"
+    },
+    {
+        "id": "3",
+        "img": "/assets/30.jpg",
+        "title": "Visita ao Palácio Real de Dubai",
+        "date": "14.02.2022",
+        "time": "17:00",
+        "description": "Visita ao Palácio Real de Dubai",
+        "local": "Dubai",
+        "autor": "Maria",
+        "mine": "1"
+    }
+]

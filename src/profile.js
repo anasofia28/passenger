@@ -22,7 +22,7 @@ class Profile extends React.Component{
                 <h2 id="subtitle">Viagens Agendadas</h2>
                 <TripsMini/>
                 <h2 id="subtitle">As Minhas Viagens Passadas</h2>
-                <TripsList/>
+                
             </React.Fragment>
         );
     }

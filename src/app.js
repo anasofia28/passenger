@@ -11,6 +11,7 @@ import TripInfo from "./tripInfo";
 import { Provider } from "react-redux";
 import store from './redux/store'
 import { useMediaQuery } from 'react-responsive'
+import TripInfoMine from "./tripInfoMine";
 
 const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 641 })
@@ -36,6 +37,7 @@ export default function App() {
                         <Route path="/profile" element={<Profile/>}/>
                         <Route path="/form" element={<TripForm/>}/>
                         <Route path="/tripInfo/:tripIndex" element={<TripInfo/>}/>
+                        <Route path="/tripInfoMine/:tripIndex" element={<TripInfoMine/>}/>
                     </Routes>
                 </Router>
             </Mobile>

@@ -10,7 +10,8 @@ const initialState = {
             date2: "14.02.2022",
             autor: "João",
             time: "17:00",
-            description: "3 dias em museus"
+            description: "3 dias em museus",
+            mine: "0"
         },
         {
             id: "2",
@@ -20,7 +21,8 @@ const initialState = {
             date2: "17.03.2022",
             autor: "Carla",
             time: "17:00",
-            description: "chá com a Rainha"
+            description: "chá com a Rainha",
+            mine: "0"
         },
         {
             id: "3",
@@ -30,7 +32,8 @@ const initialState = {
             date2: "20.03.2022",
             autor: "Francisca",
             time: "17:00",
-            description: "Visita ao coliseu"
+            description: "Visita ao coliseu",
+            mine: "0"
         }
     ]    
 }
