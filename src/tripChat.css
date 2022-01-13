@@ -27,37 +27,49 @@
 #message{
     position: absolute;
     width: 246px;
-    height: 82px;
-    left: 1000px;
-    top: 500px;
+    height: 38px;
+    bottom: 10%;
+    right: 20px;
 
     background: #EFEFEF;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+#message1{
+    position: absolute;
+    width: 246px;
+    height: 70px;
+    bottom: 40%;
+    right: 20px;
+
+    background: #EFEFEF;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 #message2{
     position: absolute;
     width: 246px;
-    height: 82px;
-    left: 100px;
-    top: 400px;
+    height: 70px;
+    bottom: 30%;
+    left: 20px;
 
     background: #fafbfdfa;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #message3{
     position: absolute;
     width: 246px;
-    height: 82px;
-    left: 100px;
-    top: 600px;
+    height: 70px;
+    bottom: 20%;
+    left: 20px;
 
     background: #fafbfdfa;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .name {
